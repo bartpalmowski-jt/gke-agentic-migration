@@ -75,9 +75,9 @@ same `LFF-NN` appears in as many rows as its **Owning phases** line names.
 **Severity:** 2
 **Owning phases:** assessment, deployment
 **Sources:**
-- Sift Engineering, *Migrating our cloud infrastructure to Google Cloud (Part 1/4)*, ~2019 — <https://engineering.sift.com/gcp-data-mig-1/>
+- Sift Engineering, *Migrating our cloud infrastructure to Google Cloud (Part 1/4)*, ~2019 — <https://sift.com/engineering/gcp-data-migration-1/>
 - HN discussion: *Sift migrated petabyte-scale HBase from AWS to Bigtable with zero downtime*, 2020 — <https://news.ycombinator.com/item?id=22329216>
-- Sift Engineering, on dedicated interconnect cost — same series
+- Sift Engineering, *Planning a Zero Downtime Data Migration (Part 3/4)* — <https://sift.com/engineering/gcp-data-migration-3/> (dedicated interconnect cost)
 
 **What practitioners report.** At PB scale, the only safe pattern Sift could find was dual-write + shadow-read for weeks before switching reads to the target. They also reported that a vendor-implemented dedicated cloud interconnect was roughly 5× cheaper than open-internet egress for the same volume.
 
